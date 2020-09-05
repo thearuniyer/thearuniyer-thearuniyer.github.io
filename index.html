@@ -29,9 +29,9 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Extra-Curricular</a></li>
                 </ul>
             </div>
         </nav>
@@ -66,11 +66,13 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div id="module" class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">System Engineer</h3>
                             <div class="subheading mb-3">Tata Consultancy Services</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <p>Developed an automated ticketing system using SAP CRM and ABAP for 15 over SAP departments. The system extracts information from customer email, creates a service request, and sends an acknowledgment response.
+                               Developed rapid application tools on SAP WebUI, that monitor ticket influx, KPIs and user data, and help improve resolution efficiency by 67%.
+                               Optimized complex SQL queries that pull data from large datasets with over 18 million records on a bi-monthly basis. Reduced query runtime by 27% per query.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">December 2014 - July 2018</span></div>
                     </div>
@@ -78,7 +80,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Software Development Intern</h3>
                             <div class="subheading mb-3">Tata Consultancy Services</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <p>Developed an appointment tool for TCS employees using AngularJS and Java Spring Hibernate ORM integration.
+                               The tool is used by over 300,000 employees for scheduling internal meetings and webinars.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2013 - June 2013</span></div>
                     </div>
@@ -111,7 +114,80 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Skills-->
+
+            <!-- Projects -->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Geo-Spatial Hotspot Analysis</h3>
+                            <div class="subheading mb-3">MapReduce | Spark | Scala</div>
+                            <p>Executed spatial statistics to the New York taxi dataset and identify the fifty most significant hot zones within the city.
+                               Developed and executed range join query, distance query, hot-zone analysis, and hot-cell analysis using Scala.
+                               Implemented Hadoop Distributed File System as a distributed storage system and Native Spark as the cluster manager.</p><br>
+                               <a href="https://github.com/thearuniyer/Geospatial-Hotspot-Analysis">View Code</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - May 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bidirectional Search Analysis in Pacman Domain</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> Implemented the Bidirectional Search (BDS) Algorithm with a variation of manhattan heuristic for Pacman Domain.
+                              Performed a comparative performance analysis of BDS with other algorithms such as Breadth-First Search, Depth-First
+                              Search, A-Star Search over nineteen different layouts in the Pacman world, and also diagnosed outliers.</p><br>
+                              <a href="https://github.com/thearuniyer/BiDirectional-Search-Pacman">View Code</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - May 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">ML-based Health app on Android</h3>
+                            <div class="subheading mb-3">Python | Tensorflow | Android</div>
+                            <p>Developed an Android app that recognizes users’ food items and adds related calories to the calorie tracker.
+                               Integrated the MobileNet model, a Tensorflow Lite API for CNN based image classification to detect the food items.
+                               Proposed the crowdsensing model to expand the app to be able to recognize home-cooked food items.</p><br>
+                               <a href="https://github.com/thearuniyer/BiDirectional-Search-Pacman">View Code</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2019 - November 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">RESTful ASL-to-Text Flask Application</h3>
+                            <div class="subheading mb-3">Python | Tensorflow | Flask | AWS | PoseNet</div>
+                            <p>Extracted skeletal key points from five-second videos depicting American Sign Language using Tensorflow PoseNet.
+                               Performed feature extraction and implemented machine learning classifiers such as Random Forest, Multi-Layer Perceptron, and KNN on the skeletal key points to predict the ASL gesture and compared the accuracy of the models.
+                               Developed a RESTful Flask application for the ML framework and deployed it as a cloud instance using AWS EC2.</p><br>
+                               <a href="https://github.com/thearuniyer/ASL-Gesture-Classifier">View Code</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2019 - November 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Activity Recognition with MyoBand</h3>
+                            <div class="subheading mb-3">Matlab</div>
+                            <p>Developed feature extraction algorithm using Matlab to identify different activities using raw sensor data collected from MyroBand.
+                               Analyzed the pattern of data streams in user dependent analysis using decision trees, neural networks, and SVM; and independent manner to derive a clear distinction between actions.</p><br>
+                               <a href="https://github.com/thearuniyer/gesture-recognition-matlab">View Code</a>
+                        </div>
+                      <div class="flex-shrink-0"><span class="text-primary">January 2019 - April 2019</span></div>
+                  </div>
+                  <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                      <div class="flex-grow-1">
+                          <h3 class="mb-0">A survey on Gradient Descent Optimization</h3>
+                          <div class="subheading mb-3">Python | NumPy | Pandas</div>
+                          <p>Designed a 3-layer neural network to compare various optimization algorithms on Fashion MNIST dataset.
+                             Implemented RMSProp, ADAM, AdaGrad, AdaDelta, Polyak's, and No-momentum and compared optimizers for convergence and stability using Python, Numpy and Pandas.</p><br>
+                             <a href="https://github.com/thearuniyer/Gradient-Descent-Survey">View Code</a>
+                      </div>
+                    <div class="flex-shrink-0"><span class="text-primary">January 2019 - April 2019</span></div>
+                </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+              <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
@@ -133,140 +209,96 @@
                         <li class="list-inline-item"><i class="fab fa-git-square"></i></li>
                     </ul>
                     <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
+                    <table>
+                      <tr>
+                        <td>
+                          <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Data Mining
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Machine Learning
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Artificial Intelligence
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Distributed Systems
+                            </li>
+                        </ul>
+                      </td>
+                        <td>
+                          <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Software Security
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Data Structures & Algorithms
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Mobile Computing
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Agile Development & Scrum
+                            </li>
+                        </ul>
+                      </td>
+                      </tr>
+                    </table>
 
-            <!-- Projects -->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Geo-Spatial Hotspot Analysis</h3>
-                            <div class="subheading mb-3">MapReduce | Spark | Scala</div>
-                            <p>Executed spatial statistics to the New York taxi dataset and identify the fifty most significant hot zones within the city.
-                               Developed and executed range join query, distance query, hot-zone analysis, and hot-cell analysis using Scala.
-                               Implemented Hadoop Distributed File System as a distributed storage system and Native Spark as the cluster manager.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - May 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Bidirectional Search Analysis in Pacman Domain</h3>
-                            <div class="subheading mb-3">Python</div>
-                            <p> Implemented the Bidirectional Search (BDS) Algorithm with a variation of manhattan heuristic for Pacman Domain.
-                              Performed a comparative performance analysis of BDS with other algorithms such as Breadth-First Search, Depth-First
-                              Search, A-Star Search over nineteen different layouts in the Pacman world, and also diagnosed outliers.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - May 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">ML-based Health app on Android</h3>
-                            <div class="subheading mb-3">Python | Tensorflow | Android</div>
-                            <p>Developed an Android app that recognizes users’ food items and adds related calories to the calorie tracker.
-                               Integrated the MobileNet model, a Tensorflow Lite API for CNN based image classification to detect the food items.
-                               Proposed the crowdsensing model to expand the app to be able to recognize home-cooked food items.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2019 - November 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">RESTful ASL-to-Text Flask Application</h3>
-                            <div class="subheading mb-3">Python | Tensorflow | Flask | AWS | PoseNet</div>
-                            <p>Extracted skeletal key points from five-second videos depicting American Sign Language using Tensorflow PoseNet.
-                               Performed feature extraction and implemented machine learning classifiers such as Random Forest, Multi-Layer Perceptron, and KNN on the skeletal key points to predict the ASL gesture and compared the accuracy of the models.
-                               Developed a RESTful Flask application for the ML framework and deployed it as a cloud instance using AWS EC2.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2019 - November 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Activity Recognition with MyoBand</h3>
-                            <div class="subheading mb-3">Matlab</div>
-                            <p>Developed feature extraction algorithm using Matlab to identify different activities using raw sensor data collected from MyroBand.
-                               Analyzed the pattern of data streams in user dependent analysis using decision trees, neural networks, and SVM; and independent manner to derive a clear distinction between actions.</p>
-                        </div>
-                      <div class="flex-shrink-0"><span class="text-primary">January 2019 - April 2019</span></div>
-                  </div>
-                  <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                      <div class="flex-grow-1">
-                          <h3 class="mb-0">A survey on Gradient Descent Optimization</h3>
-                          <div class="subheading mb-3">Python | NumPy | Pandas</div>
-                          <p>Designed a 3-layer neural network to compare various optimization algorithms on Fashion MNIST dataset.
-                             Implemented RMSProp, ASAM, AdaGrad, AdaDelta, Polyak's, and No-momentum and compared optimizers for convergence and stability using Python, Numpy and Pandas.</p>
-                      </div>
-                    <div class="flex-shrink-0"><span class="text-primary">January 2019 - April 2019</span></div>
-                </div>
                 </div>
             </section>
             <hr class="m-0" />
 
             <!-- Awards-->
-            <!-- <section class="resume-section" id="awards">
+            <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5">Extra Curricular Activities</h2>
+                    <div class="subheading mb-3">Organizations</div>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            <span class="fa-li"><i class="fas fa-graduation-cap"></i></span>
+                            Graduate Peer Career Coach at ASU Career Center
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
+                            <span class="fa-li"><i class="fas fa-university"></i></span>
+                            Software Engineer Volunteer at EPICS ASU
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                            <span class="fa-li"><i class="fas fa-trophy"></i></span>
+                            Graphic Designer at WebArch - SRM University
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                            <span class="fa-li"><i class="fas fa-trophy"></i></span>
+                            Event Organizer at AARUUSH (Techno-Management Fest) - SRM University
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">Certifications</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            Microsoft Technology Associate: Windows Server Administration Fundamentals (MTA)
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            Associate - Information Storage and Management Version 2.0 (EMCISA)
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            Matlab OnRamp Certification
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
